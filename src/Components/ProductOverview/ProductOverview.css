@@ -1,0 +1,13 @@
+.product-container {
+  text-align: center;
+  width: 20%;
+  height: 85vh;
+  margin-left: auto;
+}
+
+.product-img {
+  width: 12rem;
+  height: 12rem;
+  margin: 2rem 4rem;
+}
+

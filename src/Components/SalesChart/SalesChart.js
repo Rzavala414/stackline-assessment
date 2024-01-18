@@ -27,7 +27,7 @@ export const options = {
   responsive: true,
   elements: {
     point: {
-      backgroundColor: 'rgba(0, 0, 0, 0)' // Set transparent background
+      backgroundColor: 'rgba(0, 0, 0, 0)'
     }
   },
   plugins: {
@@ -57,17 +57,17 @@ export const options = {
   }
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'OCT', 'NOV', 'DEC'];
 
 export const data = {
   labels,
   datasets: [
     {
-      data: [5, 6, 7],
+      data: [5,34,6,5,5,67,43,5, 6, 7],
       borderColor: 'rgb(69, 168, 246)',
     },
     {
-      data: [7, 4, 2],
+      data: [7, 4,743,6,55,4,345,4,489],
       borderColor: 'rgb(155, 166, 191)',
     },
   ],
@@ -75,7 +75,7 @@ export const data = {
 
 const SalesChart = () => {
   return (
-    <div className="graph">
+    <div className="graph container">
       <Line options={options} data={data} />
     </div>
   )
