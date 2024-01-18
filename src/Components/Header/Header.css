@@ -1,0 +1,11 @@
+header {
+  padding: 1.2rem;
+  background: #052849;
+}
+
+.header-logo {
+  width: 8rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+
+}
