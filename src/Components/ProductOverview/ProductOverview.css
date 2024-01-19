@@ -7,7 +7,7 @@
 .product-img {
   width: 10rem;
   height: 10rem;
-  margin: 2rem 4rem;
+  margin: 1.5rem 4rem 0.8rem 4rem;
 }
 
 .product-tag-container {
@@ -26,7 +26,15 @@
   padding: 0.1rem 0.7rem;
 }
 
-.gip{
+.product-subtitle {
+  font-size: 0.7em;
+  width: 66%;
+  margin: 0 auto;
+  font-weight: 200;
+  color: #a7b6c6;
+}
+
+.foo{
   border-top: 1px solid #a7b6c6;
   border-bottom: 1px solid #a7b6c6;
   margin-top: 1rem;

@@ -7,8 +7,8 @@ const ProductOverview = ({ data }) => {
     <div className="container product-container">
       <img className="product-img" src={data.image} alt="product"/>
       <h3>{data.title}</h3>
-      <p>{data.subtitle}</p>
-      <div className="gip">
+      <p className='product-subtitle'>{data.subtitle}</p>
+      <div className="foo">
         <div className="product-tag-container">
           {
             data.tags.map((tag, idx) => {
