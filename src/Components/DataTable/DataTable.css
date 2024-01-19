@@ -14,7 +14,9 @@ th, td {
 
 th{
   font-weight: 300;
+  cursor: pointer;
   font-size: 0.9em;
+  padding: 1.5rem 2rem;
 }
 
 td {
@@ -25,4 +27,8 @@ td {
 
 tr {
   border-bottom: 1px solid #f4f5f9;
+}
+
+.arrow {
+  color: #d1dbe5;
 }

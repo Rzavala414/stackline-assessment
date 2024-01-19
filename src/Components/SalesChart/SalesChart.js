@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { generateSalesArray } from '../../util/helpers';
 import "./SalesChart.css";
 
 import {
@@ -61,7 +59,6 @@ const options = {
 
 
 const SalesChart = ({ data }) => {
-  const [d, setD] = useState(null);
 
   const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'OCT', 'NOV', 'DEC'];
 
@@ -69,17 +66,12 @@ const SalesChart = ({ data }) => {
     labels,
     datasets: [
       {
-        data: d,
+        data: [2,4,24,5,3,4,3],
         borderColor: 'rgb(69, 168, 246)',
       },
     ],
   };
 
-  useEffect(() => {
-    // const salesArray = generateSalesArray(data);
-    // setD(salesArray)
-    // console.log('ddf',d)
-  },[])
 
   return (
     <div className="container graph-container">
