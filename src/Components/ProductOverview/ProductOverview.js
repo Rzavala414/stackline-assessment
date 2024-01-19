@@ -6,15 +6,24 @@ const ProductOverview = ({ data }) => {
   return (
     <div className="container product-container">
       <img className="product-img" src={data.image} alt="product"/>
-      <h2>{data.title}</h2>
+      <h3>{data.title}</h3>
       <p>{data.subtitle}</p>
-      {
-        data.tags.map((tag, idx) => {
-          return (
-            <button key={tag + idx}>{tag}</button>
-          )
-        })
-      }
+      <div className="gip">
+        <div className="product-tag-container">
+          {
+            data.tags.map((tag, idx) => {
+              return (
+                <div 
+                key={tag + idx}
+                className="product-tags"
+                >
+                  {tag}
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
     </div>
   )
 }

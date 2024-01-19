@@ -6,11 +6,11 @@ const DataTable = ({ sales }) => {
     <table className="container">
       <thead>
         <tr>
-          <th>Week Ending</th>
-          <th>Retail Sales</th>
-          <th>Wholesale Sales</th>
-          <th>Units Sold</th>
-          <th>Retailer Margin</th>
+          <th>Week Ending <span class="arrow">▼</span></th>
+          <th>Retail Sales <span class="arrow">▼</span></th>
+          <th>Wholesale Sales <span class="arrow">▼</span></th>
+          <th>Units Sold <span class="arrow">▼</span></th>
+          <th>Retailer Margin <span class="arrow">▼</span></th>
         </tr>
       </thead>
       <tbody>

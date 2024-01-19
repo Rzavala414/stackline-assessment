@@ -15,12 +15,11 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 3.2rem;
-  gap: 1rem;
 }
 
 .graph{
-  width: 75%;
+  width: 79%;
   height: 29rem;
 }
