@@ -6,15 +6,15 @@ import data from './util/data.json';
 import "./App.css";
 
 const App = () => {
-  console.log(data)
+  // console.log(data)
 
   return (
     <>
       <Header />
       <div className="main-content">
         <ProductOverview data={data}/>
-        <div className="graph">
-          <SalesChart/>
+        <div className="bar">
+          <SalesChart data={data}/>
           <DataTable sales={data.sales}  />
         </div>
       </div>

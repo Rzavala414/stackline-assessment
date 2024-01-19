@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react';
 import React from 'react';
 import { Line } from 'react-chartjs-2';
+import { generateSalesArray } from '../../util/helpers';
 import "./SalesChart.css";
 
 import {
@@ -23,7 +25,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   elements: {
     point: {
@@ -57,26 +59,31 @@ export const options = {
   }
 };
 
-const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'OCT', 'NOV', 'DEC'];
 
-export const data = {
-  labels,
-  datasets: [
-    {
-      data: [5,34,6,5,5,67,43,5, 6, 7],
-      borderColor: 'rgb(69, 168, 246)',
-    },
-    {
-      data: [7, 4,743,6,55,4,345,4,489],
-      borderColor: 'rgb(155, 166, 191)',
-    },
-  ],
-};
+const SalesChart = ({ data }) => {
+  const [d, setD] = useState(null);
 
-const SalesChart = () => {
+  const labels = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'OCT', 'NOV', 'DEC'];
+
+  const dataOptions = {
+    labels,
+    datasets: [
+      {
+        data: d,
+        borderColor: 'rgb(69, 168, 246)',
+      },
+    ],
+  };
+
+  useEffect(() => {
+    // const salesArray = generateSalesArray(data);
+    // setD(salesArray)
+    // console.log('ddf',d)
+  },[])
+
   return (
     <div className="container graph-container">
-      <Line options={options} data={data} />
+      <Line options={options} data={dataOptions} />
     </div>
   )
 }
