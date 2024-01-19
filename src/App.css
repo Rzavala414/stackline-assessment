@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(237, 239, 241);
+}
+
+.container {
+  background: white;
+  border-radius: 3px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.2rem;
+  gap: 1rem;
+}
+
+.graph{
+  width: 75%;
+  height: 29rem;
+}

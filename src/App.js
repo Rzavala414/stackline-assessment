@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
 import Header from './Components/Header/Header';
 import SalesChart from './Components/SalesChart/SalesChart';
 import ProductOverview from './Components/ProductOverview/ProductOverview';
+import DataTable from './Components/DataTable/DataTable';
 import data from './util/data.json';
+import "./App.css";
 
 const App = () => {
   console.log(data)
@@ -10,9 +11,12 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="content">
+      <div className="main-content">
         <ProductOverview data={data}/>
-        <SalesChart/>
+        <div className="graph">
+          <SalesChart/>
+          <DataTable sales={data.sales}  />
+        </div>
       </div>
     </>
   );

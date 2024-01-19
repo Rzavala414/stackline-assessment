@@ -75,7 +75,7 @@ export const data = {
 
 const SalesChart = () => {
   return (
-    <div className="graph container">
+    <div className="container graph-container">
       <Line options={options} data={data} />
     </div>
   )

@@ -1,6 +1,3 @@
-.graph{
-  width: 75%;
-  height: 29rem;
-  margin-right: auto;
-  padding: 1rem;
+.graph-container{
+  height: 62vh;
 }
