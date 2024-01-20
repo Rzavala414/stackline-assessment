@@ -1,12 +1,11 @@
 import Header from './Components/Header/Header';
-import SalesChart from './Components/SalesChart/SalesChart';
+import LineGraph from './Components/LineGraph/LineGraph';
 import ProductOverview from './Components/ProductOverview/ProductOverview';
 import DataTable from './Components/DataTable/DataTable';
 import data from './util/data.json';
 import "./App.css";
 
 const App = () => {
-  // console.log(data)
 
   return (
     <>
@@ -14,7 +13,7 @@ const App = () => {
       <div className="main-content">
         <ProductOverview data={data}/>
         <div className="bar">
-          <SalesChart data={data}/>
+          <LineGraph sales={data.sales}/>
           <DataTable sales={data.sales}  />
         </div>
       </div>
