@@ -2,7 +2,7 @@ import React from 'react';
 import './LineGraph.css';
 import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 
-const MyLineChart = ({ sales }) => {
+const LineGraph = ({ sales }) => {
 
   const chartData = sales.map(point => {
     return ({
@@ -52,4 +52,4 @@ const MyLineChart = ({ sales }) => {
   );
 };
 
-export default MyLineChart;
+export default LineGraph;
